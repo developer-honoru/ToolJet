@@ -816,6 +816,21 @@ export function Table({
     },
     [serverSidePagination, clientSidePagination]
   );
+  registerAction(
+      'clearSelect',
+      async function () {
+        console.log("hy",selectedFlatRows)
+
+        const pageData = page.map((row) => row.original);
+        const currentData = rows.map((row) => row.original);
+        onComponentOptionsChanged(component, [
+          ['currentPageData', pageData],
+          ['currentData', currentData],
+          ['selectedRow', []],
+          ['selectedRowId', null],
+        ]);
+      }
+  );
 
   useEffect(() => {
     const selectedRowsOriginalData = selectedFlatRows.map((row) => row.original);

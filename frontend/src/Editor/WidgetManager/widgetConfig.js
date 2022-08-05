@@ -308,6 +308,11 @@ export const widgets = [
           },
         ],
       },
+      {
+        handle: 'clearSelect',
+        displayName: 'Clear Select',
+        params: [],
+      },
     ],
     definition: {
       others: {
