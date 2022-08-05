@@ -39,7 +39,7 @@ export const TextInput = function TextInput({
           if(e.key=='Enter'){
             setValue(e.target.value);
             setExposedVariable('value', e.target.value);
-            fireEvent('onSubmit');
+            fireEvent('onEnterPressed');
           }
       }}
         onChange={(e) => {

@@ -308,11 +308,6 @@ export const widgets = [
           },
         ],
       },
-      {
-        handle: 'clearSelect',
-        displayName: 'Clear Select',
-        params: [],
-      },
     ],
     definition: {
       others: {
@@ -777,7 +772,7 @@ export const widgets = [
     },
     events: {
       onChange: { displayName: 'On change' },
-      onSubmit: { displayName: 'On sumbit' },
+      onEnterPressed: { displayName: 'On Enter Pressed' },
     },
     styles: {
       visibility: { type: 'toggle', displayName: 'Visibility', validation: { schema: { type: 'boolean' } } },
